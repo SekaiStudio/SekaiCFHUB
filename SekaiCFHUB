@@ -103,7 +103,7 @@ function MakeWindow(Configs)
     local title = Configs.Hub.Title or "SEKAI HUB"
     local Anim_Title = Configs.Hub.Animation or "bởi : SekaiMC Studio"
     local KeySystem = Configs.Key.KeySystem or false
-    local KeyTitle = Configs.Key.Title or "Hệ Thống Key"
+    local KeyTitle = Configs.Key.Title or "HỆ THỐNG KEY"
     local KeyDescription = Configs.Key.Description or ".-."
     local KeyKey = Configs.Key.Keys or {"QEHNamUErvWr9O7eqX1T0jHikiqCYxenYrOp25l3tDQJy", "AQBfLC7J9xRBbxfFA1UPr2Z8V47pIFE7IPWYv8Pl2hs2l","344aNnrNpuih7RRGkCUysbqCTJmkD0BCwOEafEo9JrwdN","fuiFrjKxEGXaJBCdh1dnF4zM54lLSlnOUa138XDaiJ4He","ZUDHVBd27O2u1q7XHHToseJD0DAuPJUPj2v58VDu1tPoD","ZUNlmKcNNbMtgYxqETRov8bchT6hfIg0BymhEoQqXckOB","KgfQIcbCJB3gH7ma1BuY1fWbfLddY0bjGqJD4DhrQJ0wG","ZUNlmKcNNbMtgYxqETRov8bchT6hfIg0BymhEoQqXckOBKgfQIcbCJB3gH7ma1BuY1fWbfLddY0bjGqJD4DhrQJ0wG"}
     local KeyLink = Configs.Key.KeyLink or ""
@@ -155,9 +155,9 @@ function MakeWindow(Configs)
         })
     
         local ConfirmButton = Create("TextButton", KeyMenu, {
-            Text = "Xác nhận",
+            Text = "XÁC NHẬN",
             Font = SekaisCFHUB.Text_Font,
-            TextSize = 20,
+            TextSize = 14,
             TextColor3 = SekaisCFHUB.Cor_Text,
             Size = UDim2.new(0, 150, 0, 40),
             AnchorPoint = Vector2.new(1, 0),
@@ -166,9 +166,9 @@ function MakeWindow(Configs)
         })Corner(ConfirmButton)
     
         local GetKeyLink = Create("TextButton", KeyMenu, {
-            Text = "Lấy Link Get Key",
+            Text = "LẤY LINK KEY",
             Font = SekaisCFHUB.Text_Font,
-            TextSize = 20,
+            TextSize = 14,
             TextColor3 = SekaisCFHUB.Cor_Text,
             Size = UDim2.new(0, 150, 0, 40),
             Position = UDim2.new(0, 35, 0, 140),
@@ -183,7 +183,7 @@ function MakeWindow(Configs)
             Text = "",
             TextColor3 = SekaisCFHUB.Cor_Text,
             Font = SekaisCFHUB.Text_Font,
-            TextSize = 25
+            TextSize = 16
         })Corner(TextBox)
     
         local KeyVerify = false
@@ -308,7 +308,7 @@ local function CreateClose()
     
     local Mensage = Create("TextLabel", CloseMenu, {
         Size = UDim2.new(0.8, 0, 0.25, 0),
-        Text = "Bạn có chắc chắn muốn đóng script này không?",
+        Text = "BẠN CÓ CHÁC CHẮN MUỐN ĐÓNG SCRIPT NÀY KHÔNG?,
         Position = UDim2.new(0.1, 0, 0.2),
         TextColor3 = SekaisCFHUB.Cor_Text,
         Font = SekaisCFHUB.Text_Font,
@@ -320,7 +320,7 @@ local function CreateClose()
         Size = UDim2.new(0.35, 0, 0.3, 0),
         Position = UDim2.new(0.1, 0, 0.5, 0),
         BackgroundColor3 = SekaisCFHUB.Cor_Hub,
-        Text = "Đóng Script",
+        Text = "ĐÓNG SCRIPT",
         Font = SekaisCFHUB.Text_Font,
         TextColor3 = Color3.fromRGB(240, 0, 0),
         TextSize = 20
@@ -331,7 +331,7 @@ local function CreateClose()
         Position = UDim2.new(0.9, 0, 0.5, 0),
         AnchorPoint = Vector2.new(1, 0),
         BackgroundColor3 = SekaisCFHUB.Cor_Hub,
-        Text = "Hủy",
+        Text = "HỦY",
         Font = SekaisCFHUB.Text_Font,
         TextColor3 = Color3.fromRGB(0, 240, 0),
         TextSize = 20
@@ -1503,7 +1503,7 @@ function AddDiscord(parent, Configs)
         Size = UDim2.new(1, -24, 0, 25),
         AnchorPoint = Vector2.new(0.5, 1),
         Position = UDim2.new(0.5, 0, 1, -8),
-        Text = "Tham gia",
+        Text = "Tham Gia",
         Font = Enum.Font.GothamBold,
         TextSize = 15,
         TextColor3 = Color3.fromRGB(220, 220, 220),
@@ -1514,11 +1514,11 @@ function AddDiscord(parent, Configs)
     ClickConter = 0
     JoinButton.MouseButton1Click:Connect(function()
         if ClickConter == 0 or tick() - time > 5 then time = tick() setclipboard(DiscordLink) ClickConter = ClickConter + 1
-            JoinButton.Text = "Đã sao chép vào Bảng tạm"
+            JoinButton.Text = "Đã Sao Chép Vào Bộ Nhớ Tạm"
             JoinButton.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
             JoinButton.TextColor3 = Color3.fromRGB(150, 150, 150)
             task.wait(5)
-            JoinButton.Text = "Tham gia"
+            JoinButton.Text = "Tham Gia"
             JoinButton.BackgroundColor3 = Color3.fromRGB(50, 200, 50)
             JoinButton.TextColor3 = Color3.fromRGB(220, 220, 220)
         end
