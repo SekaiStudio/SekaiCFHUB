@@ -308,7 +308,7 @@ local function CreateClose()
     
     local Mensage = Create("TextLabel", CloseMenu, {
         Size = UDim2.new(0.8, 0, 0.25, 0),
-        Text = "BẠN CÓ CHÁC CHẮN MUỐN ĐÓNG SCRIPT NÀY KHÔNG?,
+        Text = "BẠN CÓ CHÁC CHẮN MUỐN ĐÓNG SCRIPT NÀY KHÔNG???",
         Position = UDim2.new(0.1, 0, 0.2),
         TextColor3 = SekaisCFHUB.Cor_Text,
         Font = SekaisCFHUB.Text_Font,
